@@ -1,0 +1,30 @@
+<script>
+  function fn() {
+    var input = document.querySelector("input");
+    input.style.border = "2px solid red";
+
+    var img = document.createElement("img");
+    img.width = "130";
+    img.height = "130";
+    img.onclick = function () {
+      img.remove();
+    };
+    img.src =
+      "https://static.cdninstagram.com/rsrc.php/v4/yD/r/nWfBjz-5_uf.png";
+    document.querySelector("body").appendChild(img);
+  }
+</script>
+
+<style>
+  button {
+    background-color: black;
+    color: white;
+  }
+  input {
+    border: 4px solid green;
+    border-radius: 10px;
+  }
+</style>
+
+<button onclick="fn()">Sign In Button</button>
+<input placeholder="username" /><br /><br />
